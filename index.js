@@ -17,7 +17,7 @@ class Sprite {
 
   draw() {
     c.fillStyle = "red";
-    c.fillRect(this.position.x, this.position.x, 50, this.height);
+    c.fillRect(this.position.x, this.position.y, 50, this.height);
   }
 
   update() {
@@ -53,6 +53,7 @@ const enemy = new Sprite({
   });
 
 console.log(player);
+console.log(enemy.position)
 
 function animate() {
   window.requestAnimationFrame(animate)
